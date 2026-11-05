@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>我的創作空間｜個人網站</title>
+<meta name="description" content="個人介紹、文章發表、留言與按讚的創作網站">
+<style>
+:root{--bg:#0b0d12;--panel:#121620;--panel2:#171c28;--text:#f2f4f8;--muted:#9ca6b7;--accent:#c8a96b;--line:#252c3a;--danger:#d66}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 20% 0,#1d2130 0,#0b0d12 42%);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;line-height:1.7}
+a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:#0b0d12dd;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.navin{height:68px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800;letter-spacing:.08em}.logo span{color:var(--accent)}
+.links{display:flex;gap:22px;color:var(--muted)}.links a:hover{color:var(--text)}
+.hero{min-height:620px;display:grid;place-items:center;padding:80px 0}.hero-inner{text-align:center;max-width:800px}
+.kicker{color:var(--accent);letter-spacing:.2em;font-size:.82rem}.hero h1{font-size:clamp(44px,8vw,82px);line-height:1.05;margin:18px 0}.hero p{color:var(--muted);font-size:1.1rem}.btn{border:1px solid var(--accent);background:var(--accent);color:#111;padding:11px 18px;border-radius:999px;font-weight:700;cursor:pointer}.btn.ghost{background:transparent;color:var(--text);border-color:var(--line)}
+section{padding:72px 0;border-top:1px solid var(--line)}h2{font-size:2rem;margin:0 0 12px}.lead{color:var(--muted)}
+.about{display:grid;grid-template-columns:1fr 1.5fr;gap:40px;align-items:center}.avatar{aspect-ratio:1;border-radius:28px;background:linear-gradient(145deg,#2b3040,#11141d);display:grid;place-items:center;font-size:7rem;border:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:22px}.tag{font-size:.75rem;color:var(--accent);border:1px solid #695a3b;border-radius:99px;padding:3px 9px}.card h3{margin:14px 0 6px}.meta{font-size:.82rem;color:var(--muted)}
+.article-list{display:grid;gap:18px}.article{padding:24px;border:1px solid var(--line);border-radius:18px;background:var(--panel);position:relative}.article p{color:#c4cad5}.actions{display:flex;gap:10px;align-items:center;margin-top:18px}.like{cursor:pointer;border:1px solid var(--line);background:transparent;color:var(--text);padding:7px 12px;border-radius:999px}.like.liked{border-color:var(--accent);color:var(--accent)}
+.form{display:grid;gap:12px;margin-top:20px}input,textarea{width:100%;background:#0d1017;color:var(--text);border:1px solid var(--line);border-radius:12px;padding:12px;font:inherit}textarea{min-height:120px;resize:vertical}
+.comment{padding:14px 0;border-bottom:1px solid var(--line)}.comment strong{display:block}.comment small{color:var(--muted)}
+footer{padding:45px 0;color:var(--muted);text-align:center}.admin{margin-top:20px}
+@media(max-width:750px){.links{display:none}.about,.cards{grid-template-columns:1fr}.hero{min-height:540px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap navin">
+  <a class="logo" href="#top">MY<span>SPACE</span></a>
+  <div class="links"><a href="#about">關於我</a><a href="#articles">文章</a><a href="#guestbook">留言</a></div>
+</div></nav>
+
+<header id="top" class="hero"><div class="hero-inner">
+  <div class="kicker">PERSONAL CREATIVE SPACE</div>
+  <h1>把想說的話，<br>留在自己的角落。</h1>
+  <p>這是一個屬於我的個人網站。這裡可以介紹自己、發表文章，也可以留下你的想法。</p>
+  <p><a class="btn" href="#articles">閱讀文章</a> <a class="btn ghost" href="#about">認識我</a></p>
+</div></header>
+
+<main>
+<section id="about"><div class="wrap about">
+  <div class="avatar">✦</div>
+  <div><div class="kicker">ABOUT ME</div><h2>關於我</h2>
+    <p class="lead">歡迎來到我的小小世界。</p>
+    <p>這裡可以放你的自我介紹、創作理念、興趣、經歷，以及任何你希望訪客認識你的內容。</p>
+    <p><span class="tag">創作</span> <span class="tag">文字</span> <span class="tag">生活</span></p>
+  </div>
+</div></section>
+
+<section><div class="wrap"><div class="kicker">WHAT I DO</div><h2>我的空間</h2>
+  <div class="cards">
+    <div class="card"><div>✎</div><h3>文章創作</h3><div class="meta">發表小說、散文、短篇與隨筆。</div></div>
+    <div class="card"><div>♡</div><h3>讀者互動</h3><div class="meta">訪客可以按讚、留言，留下自己的想法。</div></div>
+    <div class="card"><div>◌</div><h3>個人介紹</h3><div class="meta">讓大家更完整地認識這個網站的主人。</div></div>
+  </div>
+</div></section>
+
+<section id="articles"><div class="wrap"><div class="kicker">LATEST WRITINGS</div><h2>文章</h2><p class="lead">以下是目前示範文章。你可以在「管理文章」中新增自己的文章。</p>
+<div id="articleList" class="article-list"></div>
+<div class="admin"><button class="btn" onclick="openAdmin()">＋ 管理文章</button></div></div></section>
+
+<section id="guestbook"><div class="wrap"><div class="kicker">GUESTBOOK</div><h2>留言</h2>
+<form class="form" onsubmit="addComment(event)"><input id="commentName" maxlength="30" placeholder="你的名字" required><textarea id="commentText" maxlength="300" placeholder="想對我說些什麼？" required></textarea><button class="btn" type="submit">送出留言</button></form>
+<div id="comments" style="margin-top:25px"></div></div></section>
+</main>
+
+<footer><div class="wrap">© 2026 MySpace · A personal corner on the internet.</div></footer>
+
+<div id="modal" style="display:none;position:fixed;inset:0;background:#000b;z-index:30;padding:30px;overflow:auto">
+<div style="max-width:650px;margin:5vh auto;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:25px">
+<h2>管理文章</h2>
+<p class="meta">這個版本把資料儲存在目前瀏覽器的 localStorage。適合先做網站原型；若要真正讓所有訪客共用文章、留言與按讚，需要接上資料庫與登入系統。</p>
+<form class="form" onsubmit="addArticle(event)">
+<input id="articleTitle" placeholder="文章標題" maxlength="80" required>
+<input id="articleTag" placeholder="分類，例如：散文 / 小說 / 隨筆" maxlength="30">
+<textarea id="articleBody" placeholder="文章內容" required></textarea>
+<div><button class="btn" type="submit">發布</button> <button type="button" class="btn ghost" onclick="closeAdmin()">關閉</button></div>
+</form>
+<div id="manageList" style="margin-top:25px"></div>
+</div></div>
+
+<script>
+const defaultArticles=[
+ {id:"a1",title:"第一篇文章｜歡迎來到我的世界",tag:"隨筆",body:"這裡是我的第一篇文章。未來，我會把想寫的故事、想記錄的片段，以及那些值得留下的文字，一篇一篇放在這裡。",likes:3},
+ {id:"a2",title:"寫作，是把某一刻留下來",tag:"創作",body:"有些念頭只出現幾秒鐘，有些情緒卻會停留很久。文字讓它們有了形狀，也讓一個瞬間不必真的消失。",likes:7}
+];
+let articles=JSON.parse(localStorage.getItem("my_articles")||"null")||defaultArticles;
+let comments=JSON.parse(localStorage.getItem("my_comments")||"[]");
+let liked=JSON.parse(localStorage.getItem("my_liked")||"{}");
+
+function esc(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));}
+function render(){
+ document.getElementById("articleList").innerHTML=articles.map(a=>`
+ <article class="article"><span class="tag">${esc(a.tag||"文章")}</span><h3>${esc(a.title)}</h3><div class="meta">作者：我</div><p>${esc(a.body).replace(/\n/g,"<br>")}</p>
+ <div class="actions"><button class="like ${liked[a.id]?"liked":""}" onclick="toggleLike('${a.id}')">♡ 喜歡 <b>${a.likes||0}</b></button></div></article>`).join("");
+ renderComments(); renderManage();
+}
+function toggleLike(id){let a=articles.find(x=>x.id===id);if(!a)return;if(liked[id]){a.likes=Math.max(0,(a.likes||0)-1);delete liked[id]}else{a.likes=(a.likes||0)+1;liked[id]=1}save();render();}
+function addComment(e){e.preventDefault();comments.unshift({name:document.getElementById("commentName").value.trim(),text:document.getElementById("commentText").value.trim(),time:new Date().toLocaleString("zh-TW")});localStorage.setItem("my_comments",JSON.stringify(comments));e.target.reset();renderComments();}
+function renderComments(){document.getElementById("comments").innerHTML=comments.length?comments.map(c=>`<div class="comment"><strong>${esc(c.name)}</strong><small>${esc(c.time)}</small><div>${esc(c.text)}</div></div>`).join(""):'<p class="meta">還沒有留言，成為第一位留言的人吧。</p>';}
+function openAdmin(){document.getElementById("modal").style.display="block";renderManage()}function closeAdmin(){document.getElementById("modal").style.display="none"}
+function addArticle(e){e.preventDefault();articles.unshift({id:"a"+Date.now(),title:document.getElementById("articleTitle").value.trim(),tag:document.getElementById("articleTag").value.trim()||"文章",body:document.getElementById("articleBody").value.trim(),likes:0});save();e.target.reset();render();}
+function deleteArticle(id){if(confirm("確定刪除這篇文章？")){articles=articles.filter(a=>a.id!==id);save();render();}}
+function renderManage(){let el=document.getElementById("manageList");if(!el)return;el.innerHTML="<h3>已發布</h3>"+articles.map(a=>`<div class="comment"><strong>${esc(a.title)}</strong><button class="like" onclick="deleteArticle('${a.id}')">刪除</button></div>`).join("")}
+function save(){localStorage.setItem("my_articles",JSON.stringify(articles));localStorage.setItem("my_liked",JSON.stringify(liked))}
+render();
+</script>
+</body>
+</html>
